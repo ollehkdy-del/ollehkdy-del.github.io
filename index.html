@@ -8,155 +8,128 @@
       content="두영의 개인 웹사이트입니다. 프로필, 프로젝트, 이력서와 연락처를 확인할 수 있습니다."
     >
     <title>두영 | Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=spotify-dark-portfolio-v4">
   </head>
-  <body>
+  <body data-theme="spotify-dark-portfolio-v4">
     <a class="skip-link" href="#main">본문으로 바로가기</a>
 
-    <div class="app-shell">
-      <header class="site-header">
-        <nav class="sidebar-nav" aria-label="주요 메뉴">
-          <a class="brand" href="#main" aria-label="홈으로 이동">
-            <span class="brand-mark" aria-hidden="true">D</span>
-            <span>두영</span>
-          </a>
-          <div class="nav-links">
-            <a href="#about">소개</a>
-            <a href="#work">작업</a>
-            <a href="#cv">CV</a>
-            <a href="#contact">연락</a>
-          </div>
-        </nav>
-      </header>
-
-      <main class="main-stage" id="main">
-        <section class="hero section" aria-labelledby="hero-title">
-          <figure class="profile-card">
-            <img
-              src="assets/profile.jpg"
-              width="1002"
-              height="1264"
-              alt="두영의 프로필 이미지"
-            >
-            <figcaption>
-              <span>Now viewing</span>
-              <strong>Developer Portfolio</strong>
-            </figcaption>
-          </figure>
-
-          <div class="hero-copy">
-            <p class="eyebrow">Personal Website</p>
-            <h1 id="hero-title">안녕하세요, 두영입니다.</h1>
-            <p class="lead">
-              사용하기 좋은 웹 경험과 명확한 문제 해결을 좋아하는 개발자입니다.
-              간결한 구조, 접근성, 꾸준히 다듬는 제품 감각을 중요하게 생각합니다.
-            </p>
-            <div class="hero-actions" aria-label="주요 링크">
-              <a class="primary-link" href="assets/cv.pdf" target="_blank" rel="noopener">
-                CV 보기
-              </a>
-              <a class="secondary-link" href="#contact">연락하기</a>
-            </div>
-            <ul class="status-list" aria-label="사이트 특징">
-              <li>Static GitHub Pages</li>
-              <li>Responsive</li>
-              <li>Accessible</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section split" id="about" aria-labelledby="about-title">
-          <div>
-            <p class="section-kicker">About</p>
-            <h2 id="about-title">작게 시작해 끝까지 다듬는 사람</h2>
-          </div>
-          <div class="content-flow">
-            <p>
-              아이디어를 실제로 작동하는 결과물로 바꾸는 과정을 좋아합니다.
-              복잡한 요구사항을 읽기 쉬운 화면과 유지하기 좋은 코드로 정리하는 데 관심이 있습니다.
-            </p>
-            <p>
-              이 페이지는 GitHub Pages에서 바로 배포할 수 있는 정적 웹사이트로 구성했습니다.
-              외부 유료 API나 백엔드 없이 HTML과 CSS만 사용합니다.
-            </p>
-          </div>
-        </section>
-
-        <section class="section" id="work" aria-labelledby="work-title">
-          <div class="section-heading">
-            <p class="section-kicker">Work</p>
-            <h2 id="work-title">관심 있게 다루는 영역</h2>
-          </div>
-          <div class="work-grid">
-            <article class="work-item">
-              <span class="item-number">01</span>
-              <h3>웹 프론트엔드</h3>
-              <p>반응형 레이아웃, 접근성, 사용자가 빠르게 이해하는 인터페이스를 만듭니다.</p>
-            </article>
-            <article class="work-item">
-              <span class="item-number">02</span>
-              <h3>제품 구현</h3>
-              <p>요구사항을 작은 단위로 나누고, 실제 사용 흐름에 맞춰 기능을 완성합니다.</p>
-            </article>
-            <article class="work-item">
-              <span class="item-number">03</span>
-              <h3>문제 해결</h3>
-              <p>불명확한 상황을 구조화하고, 검증 가능한 방식으로 개선점을 찾아갑니다.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section cv-section" id="cv" aria-labelledby="cv-title">
-          <div>
-            <p class="section-kicker">CV</p>
-            <h2 id="cv-title">이력서</h2>
-            <p>
-              자세한 경력과 프로젝트 이력은 PDF로 정리해 두었습니다.
-              새 창에서 열어 보거나 내려받을 수 있습니다.
-            </p>
-          </div>
-          <a class="cv-link" href="assets/cv.pdf" target="_blank" rel="noopener" type="application/pdf">
-            이력서 PDF 열기
-          </a>
-        </section>
-
-        <section class="section split" id="contact" aria-labelledby="contact-title">
-          <div>
-            <p class="section-kicker">Contact</p>
-            <h2 id="contact-title">함께 이야기해요</h2>
-          </div>
-          <address class="contact-list">
-            <a href="mailto:ollehkdy@snu.ac.kr">ollehkdy@snu.ac.kr</a>
-            <a href="https://github.com/ollehkdy-del" target="_blank" rel="noopener">
-              GitHub
-            </a>
-          </address>
-        </section>
-      </main>
-    </div>
-
-    <footer class="player-bar" aria-label="현재 페이지 정보">
-      <div class="now-playing">
-        <img
-          src="assets/profile.jpg"
-          width="1002"
-          height="1264"
-          alt=""
-          aria-hidden="true"
-        >
-        <div>
-          <strong>두영</strong>
-          <span>Personal website</span>
+    <header class="site-header">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="brand" href="#main" aria-label="홈으로 이동">
+          <span class="brand-mark" aria-hidden="true">D</span>
+          <span>두영</span>
+        </a>
+        <div class="nav-links">
+          <a href="#about">소개</a>
+          <a href="#work">작업</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">연락</a>
         </div>
-      </div>
-      <div class="player-actions">
-        <a class="round-control" href="#main" aria-label="처음으로 이동">
-          <span aria-hidden="true"></span>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" aria-labelledby="hero-title">
+        <figure class="profile-card">
+          <img
+            src="assets/profile.jpg"
+            width="1002"
+            height="1264"
+            alt="두영의 프로필 이미지"
+          >
+          <figcaption>
+            <span class="status-dot" aria-hidden="true"></span>
+            Portfolio profile
+          </figcaption>
+        </figure>
+
+        <div class="hero-copy">
+          <p class="eyebrow">Personal Website</p>
+          <h1 id="hero-title">안녕하세요, 두영입니다.</h1>
+          <p class="lead">
+            사용하기 좋은 웹 경험과 명확한 문제 해결을 좋아하는 개발자입니다.
+            간결한 구조, 접근성, 꾸준히 다듬는 제품 감각을 중요하게 생각합니다.
+          </p>
+          <div class="hero-actions" aria-label="주요 링크">
+            <a class="primary-link" href="assets/cv.pdf" target="_blank" rel="noopener">
+              CV 보기
+            </a>
+            <a class="secondary-link" href="#contact">연락하기</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2 id="about-title">작게 시작해 끝까지 다듬는 사람</h2>
+        </div>
+        <div class="content-flow">
+          <p>
+            아이디어를 실제로 작동하는 결과물로 바꾸는 과정을 좋아합니다.
+            복잡한 요구사항을 읽기 쉬운 화면과 유지하기 좋은 코드로 정리하는 데 관심이 있습니다.
+          </p>
+          <p>
+            이 페이지는 GitHub Pages에서 바로 배포할 수 있는 정적 웹사이트로 구성했습니다.
+            외부 유료 API나 백엔드 없이 HTML과 CSS만 사용합니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-kicker">Work</p>
+          <h2 id="work-title">관심 있게 다루는 영역</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-item">
+            <span class="item-number">01</span>
+            <h3>웹 프론트엔드</h3>
+            <p>반응형 레이아웃, 접근성, 사용자가 빠르게 이해하는 인터페이스를 만듭니다.</p>
+          </article>
+          <article class="work-item">
+            <span class="item-number">02</span>
+            <h3>제품 구현</h3>
+            <p>요구사항을 작은 단위로 나누고, 실제 사용 흐름에 맞춰 기능을 완성합니다.</p>
+          </article>
+          <article class="work-item">
+            <span class="item-number">03</span>
+            <h3>문제 해결</h3>
+            <p>불명확한 상황을 구조화하고, 검증 가능한 방식으로 개선점을 찾아갑니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section cv-section" id="cv" aria-labelledby="cv-title">
+        <div>
+          <p class="section-kicker">CV</p>
+          <h2 id="cv-title">이력서</h2>
+          <p>
+            자세한 경력과 프로젝트 이력은 PDF로 정리해 두었습니다.
+            새 창에서 열어 보거나 내려받을 수 있습니다.
+          </p>
+        </div>
+        <a class="cv-link" href="assets/cv.pdf" target="_blank" rel="noopener" type="application/pdf">
+          이력서 PDF 열기
         </a>
-        <a class="footer-link" href="assets/cv.pdf" target="_blank" rel="noopener">
-          CV
-        </a>
-      </div>
+      </section>
+
+      <section class="section split" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2 id="contact-title">함께 이야기해요</h2>
+        </div>
+        <address class="contact-list">
+          <a href="mailto:ollehkdy@snu.ac.kr">ollehkdy@snu.ac.kr</a>
+          <a href="https://github.com/ollehkdy-del" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </address>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 두영. Built for GitHub Pages.</p>
     </footer>
   </body>
 </html>
