@@ -8,10 +8,12 @@
       content="두영의 개인 웹사이트입니다. 프로필, 프로젝트, 이력서와 연락처를 확인할 수 있습니다."
     >
     <title>두영 | Personal Website</title>
-    <link rel="stylesheet" href="styles.css?v=spotify-dark-portfolio-v4">
+    <link rel="stylesheet" href="styles.css?v=spotify-dark-portfolio-v13">
   </head>
-  <body data-theme="spotify-dark-portfolio-v4">
+  <body data-theme="spotify-dark-portfolio-v13">
+    <div id="top" aria-hidden="true"></div>
     <a class="skip-link" href="#main">본문으로 바로가기</a>
+    <a href="#top" class="back-to-top" aria-label="최상단으로 이동">↑</a>
 
     <header class="site-header">
       <nav class="nav" aria-label="주요 메뉴">
@@ -23,7 +25,12 @@
           <a href="#about">소개</a>
           <a href="#work">작업</a>
           <a href="#cv">CV</a>
+          <a href="#courses">수강 예정</a>
           <a href="#contact">연락</a>
+          <a href="#ai-usage" aria-label="AI Usage 섹션으로 이동">
+            <span class="wide-label">AI Usage</span>
+            <span class="short-label" aria-hidden="true">AI</span>
+          </a>
         </div>
       </nav>
     </header>
@@ -31,12 +38,14 @@
     <main id="main">
       <section class="hero section" aria-labelledby="hero-title">
         <figure class="profile-card">
-          <img
-            src="assets/profile.jpg"
-            width="1002"
-            height="1264"
-            alt="두영의 프로필 이미지"
-          >
+          <div class="profile-image-frame">
+            <img
+              src="assets/profile.jpg"
+              width="1002"
+              height="1264"
+              alt="두영의 프로필 이미지"
+            >
+          </div>
           <figcaption>
             <span class="status-dot" aria-hidden="true"></span>
             Portfolio profile
@@ -45,7 +54,7 @@
 
         <div class="hero-copy">
           <p class="eyebrow">Personal Website</p>
-          <h1 id="hero-title">안녕하세요,<br>두영입니다</h1>
+          <h1 id="hero-title">Hello,<br>I'm Duyoung Kim</h1>
           <p class="lead">
             사용하기 좋은 웹 경험과 명확한 문제 해결을 좋아하는 개발자입니다.
             간결한 구조, 접근성, 꾸준히 다듬는 제품 감각을 중요하게 생각합니다.
@@ -62,7 +71,7 @@
       <section class="section split" id="about" aria-labelledby="about-title">
         <div>
           <p class="section-kicker">About</p>
-          <h2 id="about-title">작게 시작해 끝까지 다듬는 사람</h2>
+          <h2 id="about-title">디테일의 가치를 믿고 끝까지 집요하게 다듬는 사람</h2>
         </div>
         <div class="content-flow">
           <p>
@@ -73,29 +82,49 @@
             이 페이지는 GitHub Pages에서 바로 배포할 수 있는 정적 웹사이트로 구성했습니다.
             외부 유료 API나 백엔드 없이 HTML과 CSS만 사용합니다.
           </p>
+          <div class="profile-badge-group">
+            <dl class="profile-facts" aria-label="프로필 요약">
+              <div>
+                <dt>Major</dt>
+                <dd>Computer Science</dd>
+              </div>
+            </dl>
+            <ul class="skills-panel" aria-label="Skills">
+              <li class="skill-badge">Java</li>
+              <li class="skill-badge">C++</li>
+              <li class="skill-badge">HTML</li>
+              <li class="skill-badge">CSS</li>
+              <li class="skill-badge">GitHub</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="section" id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <p class="section-kicker">Work</p>
-          <h2 id="work-title">관심 있게 다루는 영역</h2>
+          <h2 id="work-title">진행한 프로젝트 2개</h2>
         </div>
-        <div class="work-grid">
+        <div class="work-grid project-grid">
           <article class="work-item">
             <span class="item-number">01</span>
-            <h3>웹 프론트엔드</h3>
-            <p>반응형 레이아웃, 접근성, 사용자가 빠르게 이해하는 인터페이스를 만듭니다.</p>
+            <div class="work-copy">
+              <h3>OOP Course Project (Java/C++ 활용 시스템 구현)</h3>
+              <p>
+                Java와 C++ 기반의 객체지향 설계 원칙을 적용한 시스템 구현.
+                컴포넌트 간 역할 분리와 확장 가능한 아키텍처를 설계했습니다.
+              </p>
+            </div>
           </article>
           <article class="work-item">
             <span class="item-number">02</span>
-            <h3>제품 구현</h3>
-            <p>요구사항을 작은 단위로 나누고, 실제 사용 흐름에 맞춰 기능을 완성합니다.</p>
-          </article>
-          <article class="work-item">
-            <span class="item-number">03</span>
-            <h3>문제 해결</h3>
-            <p>불명확한 상황을 구조화하고, 검증 가능한 방식으로 개선점을 찾아갑니다.</p>
+            <div class="work-copy">
+              <h3>개인 정적 웹사이트 개발</h3>
+              <p>
+                GitHub Pages 기반의 반응형 포트폴리오 웹사이트 구축.
+                웹 접근성을 고려하며 시각적 일관성을 최적화했습니다.
+              </p>
+            </div>
           </article>
         </div>
       </section>
@@ -105,8 +134,7 @@
           <p class="section-kicker">CV</p>
           <h2 id="cv-title">이력서</h2>
           <p>
-            자세한 경력과 프로젝트 이력은 PDF로 정리해 두었습니다.
-            새 창에서 열어 보거나 내려받을 수 있습니다.
+            상세한 학업 이력과 프로젝트 수행 프로세스를 확인하실 수 있습니다.
           </p>
         </div>
         <a class="cv-link" href="assets/cv.pdf" target="_blank" rel="noopener" type="application/pdf">
@@ -114,10 +142,30 @@
         </a>
       </section>
 
+      <section class="section split" id="courses" aria-labelledby="courses-title">
+        <div>
+          <p class="section-kicker">Courses</p>
+          <h2 id="courses-title">향후 수강 예정 과목</h2>
+        </div>
+        <div class="content-flow">
+          <p class="section-note">Courses I plan to take</p>
+          <ul class="course-list">
+            <li>
+              <span class="course-index">01</span>
+              <strong>Algorithm</strong>
+            </li>
+            <li>
+              <span class="course-index">02</span>
+              <strong>System Programming</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section class="section split" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">함께 이야기해요</h2>
+          <h2 id="contact-title">Let's Connect</h2>
         </div>
         <address class="contact-list">
           <a href="mailto:ollehkdy@snu.ac.kr">ollehkdy@snu.ac.kr</a>
@@ -125,6 +173,28 @@
             GitHub
           </a>
         </address>
+      </section>
+
+      <section class="section split ai-usage-section" id="ai-usage" aria-labelledby="ai-usage-title">
+        <div>
+          <p class="section-kicker">AI Usage</p>
+          <h2 id="ai-usage-title">AI Usage</h2>
+        </div>
+        <div class="content-flow ai-usage-card">
+          <dl class="ai-usage-list">
+            <div>
+              <dt>Tool</dt>
+              <dd>Codex</dd>
+            </div>
+            <div>
+              <dt>Prompt</dt>
+              <dd>
+                자연스러운 레이아웃과 디자인을 위해 웹사이트를 캡처하여 스스로 평가하고,
+                수정사항 반영해서 보여줘.
+              </dd>
+            </div>
+          </dl>
+        </div>
       </section>
     </main>
 
